@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+    color:#fff;
+}
+
+body{
+    background: url("img/bg_bggenerator_com.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    width: 100%;
+    height: auto;
+}
+
+.container{
+    background: hsl(0, 100%, 74%);
+    display: grid;
+    place-items: center;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+@media only screen and (min-width: 704px) {
+    body{
+        height: 100vh;
+    }
+
+    .container{
+        position: absolute;
+        top: 15%;
+    }
+}
+
+.parent{
+    display: flex;
+    background: url("img/intro-desktop.png");
+}
+
+.child{
+    width: 50%;
+    margin: 20px;
+}
+
+.text{
+    width: 100%;
+    margin-top: 70px;
+}
+
+.text p{
+    font-weight: 500;
+}
+
+.text h1{
+    color: #fbfcfd;
+    font-weight: 900;
+    font-size: 50px;
+}
+
+.banner{
+    background: hsl(248, 32%, 49%);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px hsl(246, 25%, 77%);
+    margin: 10px;
+    text-align: center;
+}
+
+.banner span{
+    font-weight: 900;
+}
+
+.card{
+    background: rgb(255, 255, 255);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px hsl(246, 25%, 77%);
+    margin: 10px;
+}
+
+input{
+    width: 100%;
+    border: 1px solid hsl(246, 25%, 77%);
+    color: #000;
+}
+
+input[type=text], input[type=email], input[type=password]{
+    padding: 16px 10px;
+    margin: 4px 2px;
+}
+
+input::placeholder{
+    font-size: 20px;
+    font-weight: 400;
+    padding: 16px 10px;
+}
+
+input[type=button], input[type=submit], input[type=reset], button {
+    background-color: hsl(154, 59%, 51%);
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    box-shadow: 2px 5px 5px gray;
+    width: 100%;
+  }
+
+  .tnc{
+    color: dimgray;
+  }
+  
+  .tnc span{
+    color: hsl(0, 100%, 74%);
+  }
+
+  @media only screen and (max-width: 704px) {
+    .container{
+        margin: 50px;
+        max-width: 375px;
+    }
+
+    .parent{
+        display: grid;
+        gap: 50px;
+        background: url("img/bg-intro-mobile\ \(1\).png");
+    }
+
+    .child{
+        width: 100%;
+        margin: 2px;
+    }
+
+    .text{
+        text-align: center;
+    }
+
+    .text h1{
+        font-size: 30px;
+        font-weight: 700;
+    }
+}
